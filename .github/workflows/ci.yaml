@@ -1,0 +1,16 @@
+name: "sample cicd-pipeline"
+
+on: push
+
+jobs:
+  testjob: 
+    runs-on: ubntu-latest
+    steps:
+      - name: Hello 
+        run: echo "Hello World"
+  newtestjob:
+    runs-on: ubntu-latest
+    steps:
+      - name: Bye
+        run: echo "Good Bye"    
+
